@@ -1,50 +1,79 @@
-# Welcome to your Expo app 👋
+# IMU Sensor & Live Location Tracker
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This is an [Expo](https://expo.dev) React Native project that integrates IMU sensors (Accelerometer, Gyroscope, Magnetometer) and live location tracking with a movable pin on a Leaflet map.
 
-## Get started
+## 📦 Installation
 
-1. Install dependencies
-
+1. Clone the repository:
    ```bash
-   npm install
+   git clone https://github.com/yourusername/yourproject.git
+   cd yourproject
    ```
 
-2. Start the app
-
+2. Install dependencies (**use `--legacy-peer-deps` to avoid dependency conflicts**):
    ```bash
-    npx expo start
+   npm install --legacy-peer-deps
+   ```
+   or if using Yarn:
+   ```bash
+   yarn install
    ```
 
-In the output, you'll find options to open the app in a
+## 🚀 Running the App
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+1. Start the Metro bundler:
+   ```bash
+   npx expo start
+   ```
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+2. Run the app on an Android device/emulator:
+   ```bash
+   yarn android
+   ```
+   or using npm:
+   ```bash
+   npx expo run:android
+   ```
 
-## Get a fresh project
+## 🛠 Features
 
-When you're ready, run:
+- **Live Location Tracking** 📍
+- **Movable Map Pin** to adjust coordinates 🗺️
+- **IMU Sensor Data** (Accelerometer, Gyroscope, Magnetometer) 📡
+- **Dynamic UI Updates** for real-time sensor readings
 
-```bash
-npm run reset-project
+## 📂 Project Structure
+
+```
+project-root/
+│── app/
+│   ├── components/   # UI components (Map, Sensors, etc.)
+│   ├── services/     # Location & Sensor logic
+│   ├── screens/      # HomeScreen and other screens
+│── android/          # Android native code
+│── package.json      # Project dependencies
+│── README.md         # Project documentation
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## 🛠 Development Notes
+- Ensure Android Emulator has location enabled for testing.
+- If dependencies cause issues, use:
+  ```bash
+  npm install --legacy-peer-deps
+  ```
+- Use Expo Go or a physical device for real-time sensor readings.
 
-## Learn more
+## 🤝 Contributing
+- Fork the repo 🍴
+- Create a new branch 🔀
+- Commit your changes ✅
+- Submit a pull request 🚀
 
-To learn more about developing your project with Expo, look at the following resources:
+## 📜 License
+MIT License © 2025 
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## 👨🏽‍💻 Author
+- Adinm 
 
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+---
+Happy Coding! 🚀
